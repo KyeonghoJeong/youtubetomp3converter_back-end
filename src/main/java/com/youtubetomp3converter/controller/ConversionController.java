@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("api")
 public class ConversionController {
 
+	// Controller
 	@GetMapping("/conversion")
 	public ResponseEntity<?> GetResponse(@RequestParam("link") String link) {
 		return ResponseEntity.ok().body("Your link: "+link);
